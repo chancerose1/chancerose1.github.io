@@ -1,0 +1,9 @@
+body {
+    background-color: #fdffff;
+
+}
+
+#profile-picture {
+    border-radius: 50%;
+    border-color: #373e4b;
+}
