@@ -1,9 +1,12 @@
 body {
     background-color: #fdffff;
-
 }
 
 #profile-picture {
+    position: absolute;
+
+    width: 15%;
+    height: 15%;
     border-radius: 50%;
     border-color: #373e4b;
 }
