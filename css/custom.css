@@ -1,9 +1,20 @@
 body {
     background-color: #fdffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+.navbar {
+    position: fixed;
+    background-color: #373e4b;
+    color: #fdffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #profile-picture {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    border-color: #373e4b;
 }
