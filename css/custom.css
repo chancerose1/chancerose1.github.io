@@ -1,20 +1,91 @@
 body {
-    background-color: #fdffff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: greenyellow;
+    font-family: monospace;
+    font-size: 16px;
 }
 
-.navbar {
+#terminal {
+    white-space: pre-wrap;
+    overflow: auto;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#name-text {
+    text-align: center;
+}
+
+#ls-return-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#command-line {
+    display: flex;
+    flex-direction: row;
+}
+
+#msg-text {
+    display: flex;
+    flex-direction: row;
+}
+
+#input {
+    border: none;
+    background: none;
+    color: greenyellow;
+    outline: none;
+    font-family: monospace;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    caret-color: greenyellow;
+    width: auto;
+    display: inline;
+}
+
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.no-indent {
+    margin-left: 0;
+    display: block;
+}
+
+
+.modal {
+    display: none;
     position: fixed;
-    background-color: #373e4b;
-    color: #fdffff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* background-color: black; */
+    background-attachment: rgb(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
 }
 
-#profile-picture {
-    position: absolute;
-    margin-top: 20px;
-    margin-left: 20px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+.modal-content img {
+    justify-self: center;
+    width: 90%;
 }

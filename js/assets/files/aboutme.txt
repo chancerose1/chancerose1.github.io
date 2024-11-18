@@ -1,0 +1,9 @@
+Thanks for visiting my site! My name is Chance, I am a Computer Science undergraduate
+at the University of Virginia, graduating in December 2024. I am interested in web development
+and embedded systems. For the past three semesters, I have worked as a teaching assisstant for 
+Charles Reiss for CS 3130 - Computer Systems and Organization 2. 
+I am originally from Milton Vermont and am hoping to find employment in the New England area or in 
+Northwestern Vermont. 
+I love being outside, skiing, mountain biking, and fishing are among my favorite pasttimes. I also love 
+woodworking -- if you run 'wood', you might find images of some of my recent projects.
+One last thing, there are some 'easter eggs' hidden in this site, so play around and you might find some!
