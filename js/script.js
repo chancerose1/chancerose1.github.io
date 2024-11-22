@@ -167,6 +167,7 @@ function handleCAT(output, cmdLine, cmdArgs) {
     }
     const newLine = document.createElement('code');
     const br = document.createElement('br');
+    console.log(`js/assets/files/${file}`);
     const result = fetch(`js/assets/files/${file}`)
         .then(response => response.text())
         .then(text => {
