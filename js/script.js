@@ -146,10 +146,10 @@ function handleCAT(output, cmdLine, cmdArgs) {
         return;
     }
     const file = cmdArgs[1];
-    const fileLower = cmdArgs.toLowerCase();
+    const fileLower = file.toLowerCase();
     const curDirFiles = dirTree[curDir].map(f => f.toLowerCase());
     console.log(curDirFiles);
-    if (!curDirFiles.includes(file)) {
+    if (!curDirFiles.includes(fileLower)) {
         const termError = document.createElement('code');
         termError.textContent = `==> Error: ${file} not found.`;
         termError.classList.add('no-indent');
