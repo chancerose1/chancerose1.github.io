@@ -4,7 +4,7 @@ const cursor = document.getElementById('cursor');
 
 const dirTree = {
     'welcome': ['projects', 'resume', 'AboutMe.txt'],
-    'projects': ['embedded', 'web', 'READ.txt'],
+    'projects': ['embedded', 'web', 'README.txt'],
     'embedded': ['WIoT'],
     'web': ['vermontirrigation', 'wastewatch', 'nytimes_puzzle_solvers'],
 };
