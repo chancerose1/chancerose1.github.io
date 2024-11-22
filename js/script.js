@@ -69,7 +69,7 @@ function handleLS(output, cmdLine) {
             if (result === 'resume') {
                 const resumeLink = document.createElement('a');
                 resumeLink.innerText = result;
-                resumeLink.href = 'js/assets/files/chanceroseresume.pdf';
+                resumeLink.href = 'js/assets/files/ChanceRoseResume.pdf';
                 resumeLink.style.color = 'cyan';
                 resumeLink.style.textDecoration = 'underline';
                 resumeLink.download = 'Chance_Rose_Resume.pdf';
@@ -146,6 +146,7 @@ function handleCAT(output, cmdLine, cmdArgs) {
         return;
     }
     const file = cmdArgs[1];
+    const fileLower = cmdArgs.toLowerCase();
     const curDirFiles = dirTree[curDir].map(f => f.toLowerCase());
     console.log(curDirFiles);
     if (!curDirFiles.includes(file)) {
@@ -230,7 +231,7 @@ function handleCommand(command) {
     output.insertBefore(newLine, cmdLine);
     const br = document.createElement('br');
     output.insertBefore(br, cmdLine);
-    const cmdArgs = command.toLowerCase().split(" ");
+    const cmdArgs = command.split(" ");
     const cmd = cmdArgs[0];
     console.log(cmd);
     switch (cmd) {
