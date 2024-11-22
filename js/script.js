@@ -146,6 +146,7 @@ function handleCAT(output, cmdLine, cmdArgs) {
         return;
     }
     const file = cmdArgs[1];
+    const fileLower = cmdArgs.toLowerCase();
     const curDirFiles = dirTree[curDir].map(f => f.toLowerCase());
     console.log(curDirFiles);
     if (!curDirFiles.includes(file)) {
@@ -230,7 +231,7 @@ function handleCommand(command) {
     output.insertBefore(newLine, cmdLine);
     const br = document.createElement('br');
     output.insertBefore(br, cmdLine);
-    const cmdArgs = command.toLowerCase().split(" ");
+    const cmdArgs = command.split(" ");
     const cmd = cmdArgs[0];
     console.log(cmd);
     switch (cmd) {
