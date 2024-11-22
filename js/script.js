@@ -69,7 +69,7 @@ function handleLS(output, cmdLine) {
             if (result === 'resume') {
                 const resumeLink = document.createElement('a');
                 resumeLink.innerText = result;
-                resumeLink.href = 'js/assets/files/chanceroseresume.pdf';
+                resumeLink.href = 'js/assets/files/ChanceRoseResume.pdf';
                 resumeLink.style.color = 'cyan';
                 resumeLink.style.textDecoration = 'underline';
                 resumeLink.download = 'Chance_Rose_Resume.pdf';
