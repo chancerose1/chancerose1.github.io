@@ -4,7 +4,7 @@ const cursor = document.getElementById('cursor');
 
 const dirTree = {
     'welcome': ['projects', 'resume', 'AboutMe.txt'],
-    'projects': ['embedded', 'web', 'READ.txt'],
+    'projects': ['embedded', 'web', 'README.txt'],
     'embedded': ['WIoT'],
     'web': ['vermontirrigation', 'wastewatch', 'nytimes_puzzle_solvers'],
 };
@@ -145,11 +145,10 @@ function handleCAT(output, cmdLine, cmdArgs) {
         output.insertBefore(termError, cmdLine);
         return;
     }
-    const file = cmdArgs[1];
-    const fileLower = file.toLowerCase();
+    const file = cmdArgs[1].toLowerCase();
     const curDirFiles = dirTree[curDir].map(f => f.toLowerCase());
     console.log(curDirFiles);
-    if (!curDirFiles.includes(fileLower)) {
+    if (!curDirFiles.includes(file)) {
         const termError = document.createElement('code');
         termError.textContent = `==> Error: ${file} not found.`;
         termError.classList.add('no-indent');
